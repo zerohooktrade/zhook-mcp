@@ -1,0 +1,62 @@
+{
+  "name": "@zhooktrade/mcp",
+  "version": "0.1.0",
+  "description": "MCP server for trading agents on Robinhood Chain: best-price quotes, Universal Router calldata under a spending policy, simulation, prices, Stock Tokens and Hook Passports. Read-only; never holds a key.",
+  "license": "MIT",
+  "author": "Zerohook",
+  "type": "module",
+  "homepage": "https://zerohook.trade",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhooktrade/zhook-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhooktrade/zhook-mcp/issues"
+  },
+  "keywords": [
+    "zerohook",
+    "mcp",
+    "model-context-protocol",
+    "agents",
+    "robinhood-chain",
+    "uniswap-v4",
+    "hooks",
+    "spending-policy"
+  ],
+  "bin": {
+    "zhook-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@zhooktrade/sdk": "file:../zhook-sdk",
+    "viem": "^2.57.11",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.10.1",
+    "eslint": "^10.7.0",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.63.0",
+    "vitest": "^4.1.10"
+  },
+  "packageManager": "pnpm@11.9.0"
+}
