@@ -1,5 +1,5 @@
 import type { CallToolResult } from "@modelcontextprotocol/sdk/types.js";
-import { ZhookError } from "@zhooktrade/sdk";
+import { ZhookError } from "@zerohooktrade/sdk";
 import type { RuleResult } from "../policy.js";
 
 /** A trade the spending policy refuses. Carries every rule so the agent can see why. */

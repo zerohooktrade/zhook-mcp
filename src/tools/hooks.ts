@@ -1,4 +1,4 @@
-import { feeLabel } from "@zhooktrade/sdk";
+import { feeLabel } from "@zerohooktrade/sdk";
 import type { Deps } from "../engine.js";
 
 export interface ListHookPoolsArgs {

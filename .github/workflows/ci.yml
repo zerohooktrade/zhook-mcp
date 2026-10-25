@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # This package depends on @zhooktrade/sdk via `file:../zhook-sdk`, a sibling folder. CI checks each repo out in
+    # This package depends on @zerohooktrade/sdk via `file:../zhook-sdk`, a sibling folder. CI checks each repo out in
     # isolation, so the SDK is checked out and built next to it:
     #   <workspace>/main       -> this repo
     #   <workspace>/zhook-sdk  -> the SDK, so `../zhook-sdk` resolves.
@@ -25,7 +25,7 @@ jobs:
       - name: Checkout SDK (file:../zhook-sdk dependency)
         uses: actions/checkout@v4
         with:
-          repository: zhooktrade/zhook-sdk
+          repository: zerohooktrade/zhook-sdk
           path: zhook-sdk
 
       - name: Setup pnpm

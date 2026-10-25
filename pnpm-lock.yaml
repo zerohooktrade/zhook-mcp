@@ -11,7 +11,7 @@ importers:
       '@modelcontextprotocol/sdk':
         specifier: ^1.29.0
         version: 1.32.2(zod@4.6.7)
-      '@zhooktrade/sdk':
+      '@zerohooktrade/sdk':
         specifier: file:../zhook-sdk
         version: file:../zhook-sdk(typescript@5.9.3)(zod@4.6.7)
       viem:
@@ -687,7 +687,7 @@ packages:
   '@vitest/utils@4.1.12':
     resolution: {integrity: sha512-Q3awXrwOfEV+qc3WmO5ONyE0yO7Q1gQ9/oyHxGLZ/pl7N3NO/ZztqQwKLuwMkV+CA1JYSIeO3gkHnRDIo4AVaA==}
 
-  '@zhooktrade/sdk@file:../zhook-sdk':
+  '@zerohooktrade/sdk@file:../zhook-sdk':
     resolution: {directory: ../zhook-sdk, type: directory}
     engines: {node: '>=20'}
 
@@ -2211,7 +2211,7 @@ snapshots:
       convert-source-map: 2.0.0
       tinyrainbow: 3.2.0
 
-  '@zhooktrade/sdk@file:../zhook-sdk(typescript@5.9.3)(zod@4.6.7)':
+  '@zerohooktrade/sdk@file:../zhook-sdk(typescript@5.9.3)(zod@4.6.7)':
     dependencies:
       viem: 2.57.11(typescript@5.9.3)(zod@4.6.7)
     transitivePeerDependencies:

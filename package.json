@@ -1,5 +1,5 @@
 {
-  "name": "@zhooktrade/mcp",
+  "name": "@zerohooktrade/mcp",
   "version": "0.1.0",
   "description": "MCP server for trading agents on Robinhood Chain: best-price quotes, Universal Router calldata under a spending policy, simulation, prices, Stock Tokens and Hook Passports. Read-only; never holds a key.",
   "license": "MIT",
@@ -8,10 +8,10 @@
   "homepage": "https://zerohook.trade",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhooktrade/zhook-mcp.git"
+    "url": "git+https://github.com/zerohooktrade/zhook-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/zhooktrade/zhook-mcp/issues"
+    "url": "https://github.com/zerohooktrade/zhook-mcp/issues"
   },
   "keywords": [
     "zerohook",
@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
-    "@zhooktrade/sdk": "file:../zhook-sdk",
+    "@zerohooktrade/sdk": "file:../zhook-sdk",
     "viem": "^2.57.11",
     "zod": "^4.4.3"
   },

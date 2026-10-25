@@ -1,4 +1,4 @@
-import { NATIVE, type QuoteResponse, type Hop } from "@zhooktrade/sdk";
+import { NATIVE, type QuoteResponse, type Hop } from "@zerohooktrade/sdk";
 import type { Deps } from "../engine.js";
 import { onAllowlist } from "../policy.js";
 

@@ -4,7 +4,7 @@
  * The policy JSON exported by that page loads here unchanged.
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
-import { MAX_INTEGRATOR_FEE_BPS, MAX_SLIPPAGE_BPS, NATIVE, RHC, type QuoteResponse } from "@zhooktrade/sdk";
+import { MAX_INTEGRATOR_FEE_BPS, MAX_SLIPPAGE_BPS, NATIVE, RHC, type QuoteResponse } from "@zerohooktrade/sdk";
 import { z } from "zod";
 
 const address = z.string().regex(/^(ETH|0x[0-9a-fA-F]{40})$/, "an address or ETH");

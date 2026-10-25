@@ -1,7 +1,7 @@
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import { decodeFunctionData, getAddress } from "viem";
-import { erc20Abi, RHC } from "@zhooktrade/sdk";
+import { erc20Abi, RHC } from "@zerohooktrade/sdk";
 import { describe, expect, it } from "vitest";
 import { DEFAULT_POLICY, parsePolicy, SpendLedger, type Policy } from "../src/policy.js";
 import { createServer } from "../src/server.js";

@@ -1,4 +1,4 @@
-import { NATIVE, RHC } from "@zhooktrade/sdk";
+import { NATIVE, RHC } from "@zerohooktrade/sdk";
 import type { Deps } from "../engine.js";
 import { evaluate, onAllowlist, refusals } from "../policy.js";
 import { PolicyRefusal } from "./errors.js";

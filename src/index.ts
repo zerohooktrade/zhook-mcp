@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import { createZhook } from "@zhooktrade/sdk";
+import { createZhook } from "@zerohooktrade/sdk";
 import { loadConfig } from "./config.js";
 import { log } from "./log.js";
 import { SpendLedger } from "./policy.js";

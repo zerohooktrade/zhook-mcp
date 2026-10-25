@@ -27,7 +27,7 @@ describe("policy", () => {
     const exported = {
       name: "desk",
       chainId: 4663,
-      api: "https://app.zerohook.trade/api/v1/quote",
+      api: "https://dapp.zerohook.trade/api/v1/quote",
       perTradeUsd: 100,
       dailyUsd: 400,
       allowlist: [{ symbol: "ETH", address: "ETH" }],

@@ -10,7 +10,7 @@ import {
   type QuoteResponse,
   type Simulation,
   type StockTokenList,
-} from "@zhooktrade/sdk";
+} from "@zerohooktrade/sdk";
 import type { Engine } from "../src/engine.js";
 
 export const USDG = RHC.usdg;

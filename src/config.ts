@@ -1,5 +1,5 @@
 import { readFileSync } from "node:fs";
-import { inputToRow, type PoolRow } from "@zhooktrade/sdk";
+import { inputToRow, type PoolRow } from "@zerohooktrade/sdk";
 import { DEFAULT_POLICY, parsePolicy, type Policy } from "./policy.js";
 
 export interface Config {

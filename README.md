@@ -1,21 +1,21 @@
-# @zhooktrade/mcp
+# @zerohooktrade/mcp
 
-A [Model Context Protocol](https://modelcontextprotocol.io) server that lets an agent trade on **Robinhood Chain** (chain id 4663) through the [Zerohook](https://zerohook.trade) routing engine ([`@zhooktrade/sdk`](https://github.com/zhooktrade/zhook-sdk)), under a **spending policy** enforced before any calldata leaves the server.
+A [Model Context Protocol](https://modelcontextprotocol.io) server that lets an agent trade on **Robinhood Chain** (chain id 4663) through the [Zerohook](https://zerohook.trade) routing engine ([`@zerohooktrade/sdk`](https://github.com/zerohooktrade/zhook-sdk)), under a **spending policy** enforced before any calldata leaves the server.
 
 - **Read-only and calldata only.** The server never holds a key, never signs and never sends. The agent's own wallet signs what `build_swap` returns.
 - **Best price** across Uniswap v3 (all four fee tiers), v4 and hooked v4 pools, with splits and two-hop routes through USDG or ETH.
-- **Spending policy**: per-trade cap, rolling 24 h cap, token allowlist, max slippage, max price impact, pinned contracts and hooks, and an `eth_call` simulation from the agent wallet. The same rules as the agent-mode page of the [app](https://app.zerohook.trade); the policy JSON it exports loads here unchanged.
+- **Spending policy**: per-trade cap, rolling 24 h cap, token allowlist, max slippage, max price impact, pinned contracts and hooks, and an `eth_call` simulation from the agent wallet. The same rules as the agent-mode page of the [app](https://dapp.zerohook.trade); the policy JSON it exports loads here unchanged.
 - **stdio** transport. Logs go to stderr only.
 
-Links: app [app.zerohook.trade](https://app.zerohook.trade) · docs [docs.zerohook.trade](https://docs.zerohook.trade) · site [zerohook.trade](https://zerohook.trade) (currently served at [preview.zerohook.trade](https://preview.zerohook.trade)).
+Links: app [dapp.zerohook.trade](https://dapp.zerohook.trade) · docs [docs.zerohook.trade](https://docs.zerohook.trade) · site [zerohook.trade](https://zerohook.trade).
 
 ## Install
 
 The server depends on the SDK as a sibling folder (`file:../zhook-sdk`):
 
 ```sh
-git clone https://github.com/zhooktrade/zhook-sdk.git
-git clone https://github.com/zhooktrade/zhook-mcp.git
+git clone https://github.com/zerohooktrade/zhook-sdk.git
+git clone https://github.com/zerohooktrade/zhook-mcp.git
 (cd zhook-sdk && pnpm install && pnpm build)
 cd zhook-mcp && pnpm install && pnpm build
 ```

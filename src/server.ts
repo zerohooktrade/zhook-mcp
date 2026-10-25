@@ -1,5 +1,5 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { MAX_SLIPPAGE_BPS } from "@zhooktrade/sdk";
+import { MAX_SLIPPAGE_BPS } from "@zerohooktrade/sdk";
 import { z } from "zod";
 import type { Deps } from "./engine.js";
 import { buildSwapHandler } from "./tools/buildSwap.js";

@@ -1,4 +1,4 @@
-import type { Zhook } from "@zhooktrade/sdk";
+import type { Zhook } from "@zerohooktrade/sdk";
 import type { Policy, SpendLedger } from "./policy.js";
 
 /** The part of the SDK router the tools use (a fake can stand in for it in tests). */
